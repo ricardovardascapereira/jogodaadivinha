@@ -1,0 +1,66 @@
+<!DOCtype HTML>	
+	<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Titulo da página que irá ser apresentado -->
+        <title>Jogo do adivinha</title>
+		<!-- Linha de código que associa o ficheiro javascript ao ficheiro html -->
+        <script src="adivinha.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Linha de código que associa o ficheiro de css ao ficheiro html -->
+        <link href="meuestilo.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body>
+	<!-- Coloca todos os conteúdos da página no centro da mesma -->
+	<center>
+	<!-- Cria o div da zona inicial da página onde na mesma é dado ao jogador alguns dados enquanto o mesmo joga-->
+	<div id="Inicio">
+		<!-- Cria um formulário com o nome "JogoDaAdivinha" -->
+		<FORM name="JogoDaAdivinha">
+			<h1>O Jogo do Adivinha</h1>
+			<h2>Área de mensagens:</h2>
+			<INPUT type="txt" name="Output" value="" Size="60"><br><br>
+			O número é <INPUT type="txt" name="HighLow" value='' Size="10"><br><br>
+			Nº de tentativas: <INPUT type="txt" name="Tries"  value="0" SIZE="2"> <br><br>	
+			<hr>
+			</div id="Inicio"> 
+			
+			<!-- Cria o div da zona destinada à entrada de dados do utilizador ou seja aos botões ou bt-->			
+			<div id="bt">
+			<br>
+			<INPUT class="botao" type="button" name="init" value="1.    Iniciar / Recomeçar    " OnClick="Init()"><br><br>
+		
+			2. Escreve o número do teu palpite:
+			<INPUT type="txt" name="Input" value='' Size="10"><br><br>
+			Podes usar este teclado para escrever o número:<br><br>
+			<!-- Cria os botões que são utilizados para digitar os números com os quais se joga o jogo -->
+			<INPUT class="botao" type="button" name="one"  value="  1  " OnClick="JogoDaAdivinha.Input.value += 1">
+			<INPUT class="botao" type="button" name="one"  value="  2  " OnClick="JogoDaAdivinha.Input.value += 2">
+			<INPUT class="botao" type="button" name="one"  value="  3  " OnClick="JogoDaAdivinha.Input.value += 3"><br>
+			<INPUT class="botao" type="button" name="one"  value="  4  " OnClick="JogoDaAdivinha.Input.value += 4">
+			<INPUT class="botao" type="button" name="one"  value="  5  " OnClick="JogoDaAdivinha.Input.value += 5">
+			<INPUT class="botao" type="button" name="one"  value="  6  " OnClick="JogoDaAdivinha.Input.value += 6"><br>
+			<INPUT class="botao" type="button" name="one"  value="  7  " OnClick="JogoDaAdivinha.Input.value += 7">
+			<INPUT class="botao" type="button" name="one"  value="  8  " OnClick="JogoDaAdivinha.Input.value += 8">
+			<INPUT class="botao" type="button" name="one"  value="  9  " OnClick="JogoDaAdivinha.Input.value += 9"><br>
+			<INPUT class="botao" type="button" name="one"  value="  0  " OnClick="JogoDaAdivinha.Input.value += 0"><br><br>
+		
+		<INPUT class="botao" type="button" name="DoIt" value="3.    Verificar!    " OnClick="Jogo(JogoDaAdivinha.Input.value); JogoDaAdivinha.Input.value=''"><br><br>
+		</FORM>
+		</div id="bt">
+		<!-- Cria o div da zona do website mais abaixo que ensina as instruções ao utilizador -->
+		<div id="Inst">
+		<hr>
+		<h3>Instruções:</h3>
+		1. Clica em Iniciar/Recomeçar<br>
+		2. Clica nos botões com os números ou escreve diretamente<br>
+		3. Clica em Verificar!<br>
+		4. Repete os passos 2 e 3 até acertares no número<br><br>
+		Ps: Só tens 5 tentativas, utiliza-as bem! <br>
+		<hr>
+		</div id="Inst">
+	</center>
+
+</body>
+
+</html>

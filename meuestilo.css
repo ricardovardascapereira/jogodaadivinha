@@ -1,0 +1,20 @@
+	body {
+	background-color: Black;
+}
+	.botao { 
+		background-color: Black;
+		color: Orange;
+		border-radius: 25px;
+	}
+	#Inicio {
+		background-color: Orange;
+		font-size: 100%
+	}
+	#Inst {
+		background-color: Orange;
+		font-size: 100%
+	}
+	#bt {
+		background-color: Orange ;
+		font-size: 100%
+        }
